@@ -8,13 +8,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    # 仮情報
-    @article = Article.find(1)
   end
 
   def edit
-    # 仮情報
-    @article = Article.find(1)
   end
 
   def update
