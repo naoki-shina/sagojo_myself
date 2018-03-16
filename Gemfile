@@ -42,6 +42,8 @@ gem 'omniauth'
 gem 'font-awesome-rails'
 gem 'mechanize'
 gem 'kaminari'
+gem 'carrierwave'
+gem 'mini_magick'
 
 
 group :development, :test do

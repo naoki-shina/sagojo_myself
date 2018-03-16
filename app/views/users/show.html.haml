@@ -1,0 +1,20 @@
+= render 'layouts/header'
+.background
+  .background__cover
+    = image_tag @profile.background_image.url, class: 'background-image-size' if @profile.background_image.present?
+.profile-wrapper
+  .profile-contents
+    .profile-contents__left
+      - if @profile.avatar.blank?
+        = image_tag 'icon-tabibito-01.svg', class: "avatar-image"
+      - else
+        = image_tag @profile.avatar.url, class: "avatar-image"
+      .prrofile-contents__left__inner
+        = render 'users/profile_show'
+    .show-right-content
+      = render 'users/profile_side_show'
+= render 'layouts/sub-nav-2lists'
+.footer
+  .footer-inner
+    = render 'layouts/footer'
+    = render 'layouts/footer-copyright'
