@@ -25,10 +25,10 @@
           .header-utility-02__.fa.fa-comment
         .user_menu_btn
           .header-utility-02__item.profile-image
-            - if @profile.avatar.blank?
+            - if profile.avatar.blank?
               = image_tag 'icon-tabibito-01.svg'
             - else
-              = image_tag @profile.avatar, class: 'profile-image_cover'
+              = image_tag profile.avatar, class: 'profile-image_cover'
           .header-utility-02__string.profile-name
             = current_user.name
           .header-utility-02.fa.fa-caret-down
