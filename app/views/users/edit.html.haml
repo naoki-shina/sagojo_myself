@@ -1,4 +1,4 @@
-= render 'layouts/header'
+= render 'layouts/header', profile: @profile
 = form_for @profile, url: {action: 'update'} do |f|
   .background
     .background__cover

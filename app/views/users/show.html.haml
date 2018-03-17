@@ -1,4 +1,4 @@
-= render 'layouts/header'
+= render 'layouts/header', profile: @profile
 .background
   .background__cover
     = image_tag @profile.background_image.url, class: 'background-image-size' if @profile.background_image.present?
