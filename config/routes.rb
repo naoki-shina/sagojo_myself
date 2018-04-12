@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
 
 # メール登録確認用
-  if Rails.env.development?
+  if Rails.env.development?,
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
